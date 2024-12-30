@@ -1,12 +1,16 @@
 import { useState } from 'react'
-import './App.css'
+import Hero from './components/Hero'
+import React from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="text-5xl text-violet-300 font-bold font-robert-medium ">Gaming Website using React</div>
-   
+
+   <main className='relative min-h-screen w-screen overflow-x-hidden'>
+   <Hero/>
+   <section className='min-h-screen z-0 bg-white'/>
+   </main>
+  
   )
 }
 
